@@ -1,0 +1,148 @@
+version: 2
+
+models:
+  - name: coin_information
+    columns:
+      - name: id_coin
+        description: "ID of the coin"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: STRING
+      - name: name_coin
+        description: "Name of the coin"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: STRING
+      - name: symbol_coin
+        description: "Symbol of the coin"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: STRING
+      - name: current_price_coin
+        description: "Current price of the coin"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: total_volume_coin
+        description: "Total volume of the coin"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: market_cap_coin
+        description: "Market cap of the coin"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: market_cap_rank_coin
+        description: "Market cap rank of the coin"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: INT64
+      - name: fully_diluted_valuation_coin
+        description: "Fully diluted valuation of the coin"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: high_24h_coin
+        description: "Highest price in 24 hours"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: low_24h_coin
+        description: "Lowest price in 24 hours"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: price_change_24h_coin
+        description: "Price change in 24 hours"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: price_change_percentage_24h_coin
+        description: "Price change percentage in 24 hours"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: market_cap_change_24h_coin
+        description: "Market cap change in 24 hours"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: market_cap_percentage_change_24h_coin
+        description: "Market cap percentage change in 24 hours"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: all_time_high_coin
+        description: "All-time high price of the coin"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: ath_change_percentage_coin
+        description: "All-time high change percentage of the coin"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: all_time_low_coin
+        description: "All-time low price of the coin"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: all_time_low_change_percentage_coin
+        description: "All-time low change percentage of the coin"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: FLOAT64
+      - name: last_updated_coin
+        description: "Timestamp for last update"
+        tests:
+          - not_null
+        meta:
+          dbt_utils:
+            data_type: TIMESTAMP
+
+
+    # - name: my_second_dbt_model
+    #   description: "A starter dbt model"
+    #   columns:
+    #       - name: id
+    #         description: "The primary key for this table"
+    #         tests:
+    #             - unique
+    #             - not_null
