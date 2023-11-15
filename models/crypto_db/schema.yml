@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: coin_information
+  - name: latest_coin_information
     columns:
       - name: id_coin
         description: "ID of the coin"

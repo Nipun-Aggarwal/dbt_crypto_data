@@ -1,12 +1,1 @@
-{{ config(materialized='table') }}
-
-with source_data as (
-
-    select id_coin as id
-    union all
-    select null as id
-
-)
-
-select *
-from source_data
+SELECT * FROM `adsa-data-management-404510.crypto_data.coin_information`
